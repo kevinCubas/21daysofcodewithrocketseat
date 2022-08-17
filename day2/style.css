@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(to right top, #2c2a72, #391a4d, #30112e, #1f0b17, #000000);
+  color: hsla(0, 0%, 100%, 0.850);
+}
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  position: relative;
+  transition: .3s ease-in-out;
+  text-shadow: 0 5px .7em hsl(150, 1%, 57%);
+}
+
+h1:hover {
+  transform: translateY(-8px);
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(150, 1%, 57%);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(3em) 
+  rotateX(40deg) scale(1, .35); 
+  filter: blur(1.5em);
+  opacity: 0.8;
+}
+
+a {
+  color: inherit;
+}
