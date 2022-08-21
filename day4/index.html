@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div id="calculator">
+    <div id="displayResult">
+      <input id="result" type="text" disabled value="0">
+    </div>
+    <div id="buttons">
+      <div id="numbersKeys">
+        <div class="row">
+          <button class="number btn" >7</button>
+          <button class="number btn" >8</button>
+          <button class="number btn" >9</button>
+        </div>
+
+        <div class="row">
+          <button class="number btn" >4</button>
+          <button class="number btn" >5</button>
+          <button class="number btn" >6</button>
+        </div>
+
+        <div class="row">
+          <button class="number btn" >1</button>
+          <button class="number btn" >2</button>
+          <button class="number btn">3</button>
+        </div>
+
+        <div class="row">
+          <button id="clearbtn" >C</button>
+          <button class="number btn" >0</button>
+        </div>
+  
+      </div>
+      <div id="operatorsKeys">
+        <div class="column">
+          <button class="operator btn" >+</button>
+          <button class="operator btn" >-</button>
+          <button class="operator btn" >/</button>
+          <button class="operator btn" >x</button>
+          <button id="equal" class="operator" >=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Made with 💜 by <a href="https://github.com/kevinCubas">Kevin</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
