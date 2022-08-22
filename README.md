@@ -9,5 +9,5 @@ Rocketseat 21-Day Code Challenge
 - [x] Day 3 - Create a animated button;
 - [x] Day 4 - Code a Calculator;
 - [x] Day 5 - Create a custom 404 error page;
-- [ ] Day 6 - Create a glassmorphism effect card;
+- [x] Day 6 - Create a glassmorphism effect card;
 - [ ] Day 7 - Develop a counter;

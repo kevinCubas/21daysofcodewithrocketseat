@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container" id="card">
+    <img id="image"
+      src=""
+      alt="">
+    <h1 id="name">Kevin Cubas</h1>
+    <p><span id="subtitle">Front end</span></p>
+    <p>Hello World, I'm a developer.</p>
+    <p id="repos"></p>
+    <div id="media-icons">
+      <a href="https://www.linkedin.com/in/kevincubas/"><i class="icons fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/kevinCubas"><i class="icons fa-brands fa-github"></i></a>
+    </div>
+  </div>
+  
+  <script>
+    const image = document.getElementById("image")
+    const name = document.getElementById('name')
+    const subtitle = document.getElementById('subtitle')
+    const repos = document.getElementById("repos")
+
+    const url = "https://api.github.com/users/kevinCubas"
+    const fetching = () => {
+      fetch(url).then(async res => {
+        if(!res.ok) {
+          throw new Error(res.status)
+        }
+        const response = await res.json()
+
+        image.src = response.avatar_url
+        name.innerText = response.name
+        subtitle.innerText = response.company
+        repos.innerHTML = `<span id="textrepos">Repositories: </span>${response.public_repos}`
+      }).catch(error => console.log(error));
+    }
+    fetching()
+  </script>
+</body>
+
+</html>
