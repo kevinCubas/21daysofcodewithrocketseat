@@ -11,3 +11,13 @@ Rocketseat 21-Day Code Challenge
 - [x] Day 5 - Create a custom 404 error page;
 - [x] Day 6 - Create a glassmorphism effect card;
 - [x] Day 7 - Develop a counter;
+
+### 2st Week 
+- [x] Day 8 - Create a toggle theme button;
+- [x] Day 9 - Create a loading animation;
+- [ ] Day 10 - use the Particle.js lib;
+- [ ] Day 11 - Create a login form layout;
+- [ ] Day 12 - develop an image gallery;
+- [ ] Day 13 - develop a responsive menu;
+- [ ] Day 14 - create a quizz form ;
+
