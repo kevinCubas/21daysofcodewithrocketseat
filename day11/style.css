@@ -27,7 +27,7 @@ form {
 }
 
 h1 span {
-  color: #5609a3;
+  color: #9b73c2;
 }
 
 #credits {
@@ -62,7 +62,7 @@ h1 span {
 }
 
 #submitbtn {
-  background-color: #5609a3;
+  background-color: #8048b8;
   border-radius: 1em;
   border-style: none;
   color: #fff;
@@ -76,7 +76,7 @@ h1 span {
 }
 
 #submitbtn:hover {
-  opacity: .7;
+  background-color: #9b73c2;
 }
 
 a {
