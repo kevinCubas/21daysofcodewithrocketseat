@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <main>
+    <div>
+      <h1 id="title">LOGIN <br><span>BE PART OF OUR STORY</span></h1>
+      <img id="animatecat" src="assets/cat-astronaut-animate.svg" alt="">
+      <a id="credits" href="https://storyset.com/space">Space illustrations by Storyset</a>
+    </div>
+    <section>
+      <form id="loginform">
+        <div class="inputfield">
+          <label id="userLabel" for="userNameInput">User:</label>
+          <input type="text" id="userNameInput" placeholder="User">
+        </div>
+        <div class="inputfield">
+          <label id="passwordLabel" for="passwordInput">Password:</label>
+          <input type="password" id="passwordInput" placeholder="Password">
+        </div>
+        <button id="submitbtn" type="submit">Login</button>
+        <a id="forgetpasswordlink" href="#">Forgot my password</a>
+      </form>
+    </section>
+  </main>
+  <script>
+    const loginForm= document.getElementById("loginform")
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault()
+    })
+  </script>
+</body>
+</html>

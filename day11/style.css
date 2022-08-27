@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right top, #1b0e26, #372a4b, #462961);
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(43, 43, 43);
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+h1 span {
+  color: #5609a3;
+}
+
+#credits {
+  opacity: .5;
+  font-size: 8px;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+  color: #fff;
+}
+
+.inputfield label {
+  padding-left: 3px;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.inputfield input {
+  border: none;
+  outline: none;
+  background-color: #3a3a3ab0;
+  border-radius: 1em;
+  padding: .8em;
+  color: #fff;
+}
+
+.inputfield input::placeholder {
+  font-size: .6rem;
+}
+
+#submitbtn {
+  background-color: #5609a3;
+  border-radius: 1em;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 2rem;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+}
+
+#submitbtn:hover {
+  opacity: .7;
+}
+
+a {
+  color: inherit;
+  font-size: small;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  main {
+    justify-content: center;
+  }
+
+  #animatecat, #credits {
+    display: none;
+  }
+
+  #title {
+    position: absolute;
+    top: 10%
+  }
+}
