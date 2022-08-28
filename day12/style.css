@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.slider-container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .5);
+  position: relative;
+}
+
+.image-container {
+  display: flex;
+  transition: transform .4s ease-in-out;
+
+}
+
+.btn-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.btn-icon:hover {
+  opacity: 1;
+}
+
+.btn-icon.right {
+  right: 10px;
+}
+
+.btn-icon.left {
+  left: 10px;
+}
