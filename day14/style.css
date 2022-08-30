@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(0,13,36);
+  background: linear-gradient(90deg, rgba(0,13,36,1) 0%, rgba(9,62,121,1) 35%, rgba(0,108,255,1) 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+#title {
+  position: absolute;
+  top: 10%;
+  color: #fff;
+}
+
+article {
+  background-color: white;
+  border-radius: 1rem;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+article header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+#question {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#quizz-form {
+  padding: 1rem;
+}
+
+.alternative {
+  border: 1px solid hsla(0, 0%, 36%, 20%);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.alternative:hover {
+  transform: translateY(-2px);
+}
+
+.correct {
+  background-color: rgb(65, 189, 65);
+  color: #fff;
+}
+
+.incorrect {
+  background-color: rgb(255, 87, 87);
+  color: #fff;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+}
