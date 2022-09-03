@@ -6,12 +6,14 @@
 }
 
 body {
+  height: 100vh;
   background: linear-gradient(to right, #410c47, #561470);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  margin: 100px 0 0 200px;
-  width: fit-content;
   padding: 1rem;
   border-radius: 1em;
   background-color: #251235;
@@ -19,7 +21,7 @@ body {
 
 .row {
   width: 100%;
-  height: 60px;
+  height: 3.5rem;
 }
 
 .one,
@@ -27,17 +29,17 @@ body {
 .three,
 .four,
 .five {
-  margin: 10px 0 0 0;
+  margin: 0.625rem 0 0 0;
 }
 
 button {
   color: black;
   font-weight: 500;
-  width: 55px;
-  height: 55px;
+  width: 3.4375rem;
+  height: 3.4375rem;
   border: none;
-  font-size: 15px;
-  margin-left: 5px;
+  font-size: 0.9375rem;
+  margin-left: 0.3125rem;
   outline: none;
   border-radius: 20%;
 }
@@ -51,42 +53,41 @@ button.pressed {
 }
 
 .num-lock-key {
-  width: 85px;
+  width: 5.3125rem;
   border-radius: 10px;
 }
 
 .back {
-  width: 148px;
+  width: 9.25rem;
   border-radius: 10px;
 }
 
 .tab {
-  width: 85px;
+  width: 5.3125rem;
   border-radius: 10px;
 }
 
 .cap {
-  width: 96px;
+  width: 6rem;
   border-radius: 10px;
 }
 
 .enter-btn {
-  width: 109px;
+  width: 6.8125rem;
   border-radius: 10px;
 }
 
 .shift {
-  width: 135px;
+  width: 8.4375rem;
   border-radius: 10px;
- 
 }
 
 .last {
-  width: 56px;
+  width: 3.5rem;
   border-radius: 10px;
 }
 
 .space {
-  width: 465px;
+  width: 29.0625rem;
   border-radius: 10px;
 }

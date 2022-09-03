@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, #001f4d, #002e72, #003e99, #004fc1, #125feb);
+  color: #fff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#passwordWrapper {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  border-radius: .5em;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#passwordInput {
+  outline: none;
+  border: none;
+  width: 15rem;
+  height: 100%;
+  padding-left: .5em;
+  color: inherit;
+  background-color: transparent;
+}
+
+#passwordInput::placeholder {
+  color: rgba(255, 255, 255, 0.404);
+}
+
+#copy {
+  height: 100%;
+  border: none;
+  outline: none;
+  width: 4rem;
+  font-weight: 700;
+  background-color: #000;
+  color: inherit;
+}
+
+#copy:active {
+  opacity: .5;
+}
+
+#generate-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: .5em;
+  background-color: rgb(0, 15, 63);
+  color: #fff;
+  transition: .5s;
+}
+
+#generate-btn:hover {
+  transform: translateY(-2px);
+}
+
+#generate-btn:active {
+  opacity: .5;
+}
