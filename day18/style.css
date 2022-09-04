@@ -55,6 +55,7 @@ body {
   font-weight: 700;
   background-color: #000;
   color: inherit;
+  cursor: pointer;
 }
 
 #copy:active {
