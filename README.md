@@ -28,4 +28,4 @@ Rocketseat 21-Day Code Challenge
 - [x] Day 18 - Develop a random password generator;
 - [x] Day 19 - Develop a site that generates random images using the Unsplash API;
 - [x] Day 20 - Develop an emoji picker website. When you select the emoji it is copied to the clipboard;
-- [ ] Day 21 - Develop a portfolio page (Tell about yourself, your experiences and skills. Include all challenges - developed during the 21 days of coding)
+- [x] Day 21 - Develop a portfolio page (Tell about yourself, your experiences and skills. Include all challenges - developed during the 21 days of coding)
